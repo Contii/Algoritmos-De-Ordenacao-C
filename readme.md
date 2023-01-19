@@ -2,11 +2,11 @@
 
 ### Para a realização deste estudo, foram implementados:
 
-#### Os principais algoritmos de ordenação de dados.
+#### - Os principais algoritmos de ordenação de dados.
 
-#### Uma forma de criar um documento .txt para armazenar grandes volumes de informações.
+#### - Uma forma de criar um documento .txt para armazenar grandes volumes de informações.
 
-#### Um timer para contar quanto tempo cada algoritmo leva para ordenar um arquivo .txt com essas informações.
+#### - Um timer para contar quanto tempo cada algoritmo leva para ordenar um arquivo .txt com essas informações.
 
 ### Imagens comparativas dos resultados obtidos:
 
