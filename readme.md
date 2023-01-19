@@ -10,3 +10,19 @@
 
 
 ## Palavras chave:
+
+Ordenação de Dados.
+
+BubbleSort.
+
+InsertSort.
+
+ShellSort.
+
+SelectionSort.
+
+QuickSort.
+
+MergeSort.
+
+# Agradecimento Especial ao Prof. Dr. Pedro Luiz de Paula Filho.
