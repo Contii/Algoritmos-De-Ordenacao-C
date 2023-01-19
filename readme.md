@@ -10,12 +10,11 @@
 
 ### Imagens comparativas dos resultados obtidos:
 
-<p align="center"> <img src="https://github.com/Contii/MASTIGADO-LINGUAGEM-C/blob/master/Algoritmos-De-Ordenacao-C/Imagens/Desempenho_Ordenados.png" width="100%"> </p>
+<p align="center"> <img src="https://github.com/Contii/Algoritmos-De-Ordenacao-C/blob/master/Imagens/Desempenho_Ordenados.png" width="100%"> </p>
 
-<p align="center"> <img src="https://github.com/Contii/MASTIGADO-LINGUAGEM-C/blob/master/Algoritmos-De-Ordenacao-C/Imagens/Desempenho_Inversos.png" width="100%"> </p>
+<p align="center"> <img src="https://github.com/Contii/Algoritmos-De-Ordenacao-C/blob/master/Imagens/Desempenho_Inversos.png" width="100%"> </p>
 
-<p align="center"> <img src="https://github.com/Contii/MASTIGADO-LINGUAGEM-C/blob/master/Algoritmos-De-Ordenacao-C/Imagens/Desempenho_Randômicos.png" width="100%"> </p>
-
+<p align="center"> <img src="https://github.com/Contii/Algoritmos-De-Ordenacao-C/blob/master/Imagens/Desempenho_Randômicos.png" width="100%"> </p>
 
 ## Palavras chave:
 
