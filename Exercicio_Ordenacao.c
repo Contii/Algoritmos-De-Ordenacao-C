@@ -9,7 +9,6 @@ void main(){
    int *buffer = NULL;
    char nomeArquivo[255];
 
-
    do{
     system("cls || clear");
     printf("Ordenacao de numeros em arquivo.txt\n\n");
@@ -23,7 +22,6 @@ void main(){
     printf("9 - Teste\n");
     printf("0 - Sair\n\n");
     scanf("%d", &menu);
-
     switch(menu){
 
        case 1:
@@ -1023,17 +1021,6 @@ void main(){
           }while(menu != -1);
           menu = NULL;
           break;
-
-
-
-
-
-
-
-
-
-
-
        case 9:
           system("cls || clear");
           printf("----teste----\n");
@@ -1050,11 +1037,9 @@ void main(){
           printf("\n\nConcluido!\n");
           getch();
           break;
-
        case 0:
           menu = -2;
           break;
-
        default:
           printf("\nDigite uma opcao valida!\n");
           getch();

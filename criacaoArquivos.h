@@ -3,50 +3,35 @@
 #include <time.h>
 
 void criarOrdenado(int x, char nomeArquivo[]){ // Criando um arquivo de numeros em ordem crescente
-
    FILE *file = fopen(nomeArquivo, "w"); // o ponteiro FILE cria/abre o arquivo NOMEARQUVIO (atualmente vazio) para W(write) editá-lo.
-
    for (int i=1;i<=x;i++){
       fprintf(file, "%d\n", i);  // Escreve um numero e pula uma linha no arquivo apontado por FILE.
    }
-
    fclose(file); // close.
 }
-
 void criarInvertido(int x, char nomeArquivo[]){
-
    FILE *file = fopen(nomeArquivo, "w");
-
    for (int i=x;i>=1;i--){
       fprintf(file, "%d\n", i);
    }
-
    fclose(file);
 }
-
 void criarRandomico(int x, char nomeArquivo[]){
-
    FILE *file = fopen(nomeArquivo, "w");
    int chute;
-
    srand(time(NULL));
    for (int i=1;i<=x;i++){
       chute = (rand() * rand()) % 1000000;
       fprintf(file, "%d\n", chute);
    }
-
    fclose(file);
 }
-
 void lerArquivo(int x, char nomeArquivo[],int *buffer){
-
    FILE *file = fopen(nomeArquivo,"r");
-
    if(file == NULL){
       printf("\nArquivo corrompido ou nao existe.\n");
       return(1);
    }
-
    for(int i=0; i<=x ;i++){
       fscanf(file,"%d",&buffer[i]);
    }

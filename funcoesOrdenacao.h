@@ -5,11 +5,9 @@
 
 clock_t tempo; //variável para armazenar tempo
 
-
 void bubbleSort(int x, int* buffer){
    tempo = clock(); //armazenando o tempo
    int i, j, aux;
-
    printf("\nBubbleSort iniciado, aguarde o resultado...\n");
    for (i=0; i<x-1 ;i++){
       for (j=0; j<x-(i+1) ;j++){
@@ -21,7 +19,6 @@ void bubbleSort(int x, int* buffer){
       }
    }
    tempo = clock() - tempo; // subtraindo o tempo final pelo inicial.
-
    printf("\n posicao 1 = %d", buffer[0]);
    printf("\n posicao 2 = %d", buffer[1]);
    printf("\n posicao 3 = %d", buffer[2]);
@@ -32,16 +29,13 @@ void bubbleSort(int x, int* buffer){
    printf("\n posicao 418 = %d", buffer[417]);
    printf("\n posicao 777 = %d", buffer[776]);
    printf("\n posicao 749000 = %d", buffer[748999]);
-
    printf("\n\nTempo de execucao: %.4f segundos.", ((double)tempo)/((CLOCKS_PER_SEC))); // imprimindo tempo em segundos convertido para double.
    printf("\nTempo de execucao: %.2f minutos.", (((double)tempo)/((CLOCKS_PER_SEC))/60)); // imprimindo tempo em minutos convertido para double.
    printf("\nTempo de execucao: %.2f horas.\n", ((((double)tempo)/((CLOCKS_PER_SEC))/60)/60)); // imprimindo tempo em horas convertido para double.
 }
-
 void insertSort(int x, int* buffer){
    tempo = clock(); //armazenando o tempo
    int i, j, aux;
-
    printf("\nInsertSort iniciado, aguarde o resultado...\n");
    for (i = 1; i <= x - 1 ;i++) { // percorre todo o vetor
       j = i;
@@ -53,7 +47,6 @@ void insertSort(int x, int* buffer){
       }
    }
    tempo = clock() - tempo; // subtraindo o tempo final pelo inicial.
-
    printf("\n posicao 1 = %d", buffer[0]);
    printf("\n posicao 2 = %d", buffer[1]);
    printf("\n posicao 3 = %d", buffer[2]);
@@ -64,16 +57,13 @@ void insertSort(int x, int* buffer){
    printf("\n posicao 418 = %d", buffer[417]);
    printf("\n posicao 777 = %d", buffer[776]);
    printf("\n posicao 749000 = %d", buffer[748999]);
-
    printf("\n\nTempo de execucao: %.4f segundos.", ((double)tempo)/((CLOCKS_PER_SEC))); // imprimindo tempo em segundos convertido para double.
    printf("\nTempo de execucao: %.2f minutos.", (((double)tempo)/((CLOCKS_PER_SEC))/60)); // imprimindo tempo em minutos convertido para double.
    printf("\nTempo de execucao: %.2f horas.\n", ((((double)tempo)/((CLOCKS_PER_SEC))/60)/60)); // imprimindo tempo em horas convertido para double.
 }
-
 void shellSort(int x, int *buffer){
    tempo = clock(); //armazenando o tempo
    int i, j, h=1, aux;
-
    printf("\nShellSort iniciado, aguarde o resultado...\n");
    while(h < x){
       h = 3*h+1;
@@ -91,7 +81,6 @@ void shellSort(int x, int *buffer){
       h = h/3;
    }
    tempo = clock() - tempo; // subtraindo o tempo final pelo inicial.
-
    printf("\n posicao 1 = %d", buffer[0]);
    printf("\n posicao 2 = %d", buffer[1]);
    printf("\n posicao 3 = %d", buffer[2]);
@@ -102,16 +91,13 @@ void shellSort(int x, int *buffer){
    printf("\n posicao 418 = %d", buffer[417]);
    printf("\n posicao 777 = %d", buffer[776]);
    printf("\n posicao 749000 = %d", buffer[748999]);
-
    printf("\n\nTempo de execucao: %.4f segundos.", ((double)tempo)/((CLOCKS_PER_SEC))); // imprimindo tempo em segundos convertido para double.
    printf("\nTempo de execucao: %.2f minutos.", (((double)tempo)/((CLOCKS_PER_SEC))/60)); // imprimindo tempo em minutos convertido para double.
    printf("\nTempo de execucao: %.2f horas.\n", ((((double)tempo)/((CLOCKS_PER_SEC))/60)/60)); // imprimindo tempo em horas convertido para double.
 }
-
 void selectionSort(int x, int *buffer){
    tempo = clock(); //armazenando o tempo
    int i, j, min, aux;
-
    printf("\nSelectionSort iniciado, aguarde o resultado...\n");
    for (i = 0; i < (x-1) ;i++) {
       min = i;
@@ -126,7 +112,6 @@ void selectionSort(int x, int *buffer){
      }
    }
    tempo = clock() - tempo; // subtraindo o tempo final pelo inicial.
-
    printf("\n posicao 1 = %d", buffer[0]);
    printf("\n posicao 2 = %d", buffer[1]);
    printf("\n posicao 3 = %d", buffer[2]);
@@ -137,18 +122,15 @@ void selectionSort(int x, int *buffer){
    printf("\n posicao 418 = %d", buffer[417]);
    printf("\n posicao 777 = %d", buffer[776]);
    printf("\n posicao 749000 = %d", buffer[748999]);
-
    printf("\n\nTempo de execucao: %.4f segundos.", ((double)tempo)/((CLOCKS_PER_SEC))); // imprimindo tempo em segundos convertido para double.
    printf("\nTempo de execucao: %.2f minutos.", (((double)tempo)/((CLOCKS_PER_SEC))/60)); // imprimindo tempo em minutos convertido para double.
    printf("\nTempo de execucao: %.2f horas.\n", ((((double)tempo)/((CLOCKS_PER_SEC))/60)/60)); // imprimindo tempo em horas convertido para double.
 }
-
+///........................................
 void quickSortRecursivo(int esquerda, int direita, int *buffer){
    tempo = clock(); //armazenando o tempo
-
    printf("\nQuickSort iniciado, aguarde o resultado...\n");
    quickSort(esquerda,direita,buffer);
-
    tempo = clock() - tempo; // subtraindo o tempo final pelo inicial.
    printf("\n posicao 1 = %d", buffer[0]);
    printf("\n posicao 2 = %d", buffer[1]);
@@ -160,7 +142,6 @@ void quickSortRecursivo(int esquerda, int direita, int *buffer){
    printf("\n posicao 418 = %d", buffer[417]);
    printf("\n posicao 777 = %d", buffer[776]);
    printf("\n posicao 749000 = %d", buffer[748999]);
-
    printf("\n\nTempo de execucao: %.4f segundos.", ((double)tempo)/((CLOCKS_PER_SEC))); // imprimindo tempo em segundos convertido para double.
    printf("\nTempo de execucao: %.2f minutos.", (((double)tempo)/((CLOCKS_PER_SEC))/60)); // imprimindo tempo em minutos convertido para double.
    printf("\nTempo de execucao: %.2f horas.\n", ((((double)tempo)/((CLOCKS_PER_SEC))/60)/60)); // imprimindo tempo em horas convertido para double.
@@ -170,7 +151,6 @@ void quickSort(int esquerda, int direita, int *buffer) {
    i = esquerda;
    j = direita;
    x = buffer[(esquerda + direita) / 2];
-
    while(i <= j){
       while(buffer[i] < x && i < direita){
          i++;
@@ -195,15 +175,13 @@ void quickSort(int esquerda, int direita, int *buffer) {
       quickSort(i, direita, buffer);
    }
 }
-
+///........................................
 void mergeSort(int *buffer, int tam){
    tempo = clock(); //armazenando o tempo
    int *c = malloc(sizeof(int) * tam);
-
    printf("\nMergeSort iniciado, aguarde o resultado...\n");
    sort(buffer, c, 0, tam - 1);
    free(c);
-
    tempo = clock() - tempo; // subtraindo o tempo final pelo inicial.
    printf("\n posicao 1 = %d", buffer[0]);
    printf("\n posicao 2 = %d", buffer[1]);
@@ -215,34 +193,25 @@ void mergeSort(int *buffer, int tam){
    printf("\n posicao 418 = %d", buffer[417]);
    printf("\n posicao 777 = %d", buffer[776]);
    printf("\n posicao 749000 = %d", buffer[748999]);
-
    printf("\n\nTempo de execucao: %.4f segundos.", ((double)tempo)/((CLOCKS_PER_SEC))); // imprimindo tempo em segundos convertido para double.
    printf("\nTempo de execucao: %.2f minutos.", (((double)tempo)/((CLOCKS_PER_SEC))/60)); // imprimindo tempo em minutos convertido para double.
    printf("\nTempo de execucao: %.2f horas.\n", ((((double)tempo)/((CLOCKS_PER_SEC))/60)/60)); // imprimindo tempo em horas convertido para double.
 }
 void sort(int *buffer, int *c, int i, int f){
-
    int m = (i + f) / 2;
-
    if(i >= f)
       return;
-
    sort(buffer, c, i, m);
    sort(buffer, c, m + 1, f);
-
    if (buffer[m] <= buffer[m + 1])
       return;
-
    merge(buffer, c, i, m, f);
 }
 void merge(int *buffer, int *c, int i, int m, int f) {
    int z, iv = i, ic = m + 1;
-
    for(z = i; z <= f; z++)
       c[z] = buffer[z];
-
    z = i;
-
    while (iv <= m && ic <= f) {
 
       if (c[iv] <= c[ic])
@@ -250,13 +219,11 @@ void merge(int *buffer, int *c, int i, int m, int f) {
       else
          buffer[z++] = c[ic++];
    }
-
    while (iv <= m)
       buffer[z++] = c[iv++];
-
    while (ic <= f)
       buffer[z++] = c[ic++];
 }
-
+///........................................
 
 

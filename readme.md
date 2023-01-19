@@ -16,6 +16,20 @@
 
 <p align="center"> <img src="https://github.com/Contii/Algoritmos-De-Ordenacao-C/blob/master/Imagens/Desempenho_Randômicos.png" width="100%"> </p>
 
+## Arquivos:
+ 
+### Exercicio_Ordenacao.c
+
+Front-End do programa.
+
+### criacaoArquivos.h
+
+Biblioteca para criar os arquivos .txt.
+
+### funcoesOrdenacao.h
+
+Biblioteca com o Back-End do programa, contendo funções de ordenação.
+
 ## Palavras chave:
 
 Ordenação de Dados.
